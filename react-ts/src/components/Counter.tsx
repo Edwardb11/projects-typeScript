@@ -7,7 +7,7 @@ export const Counter = () => {
     }
   return (
     <div className="mt-5">
-        <h3>Counter: useState</h3>
+        <h3>Counter:</h3>
         <span>Valor: {counter}</span>
         <br/>
         <button onClick={()=>incrementar(1)} className="btn btn-outline-primary mt-2">
@@ -16,7 +16,7 @@ export const Counter = () => {
         <button onClick={()=>incrementar(2)} className="btn btn-outline-primary mt-2">
             +2
         </button>
-        <button onClick={()=>setCounter(0)} className="btn btn-outline-dagnger mt-2">
+        <button onClick={()=>setCounter(0)} className="btn btn-outline-danger mt-2">
             Reset
         </button>
     </div>
