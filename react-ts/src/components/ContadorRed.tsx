@@ -13,7 +13,7 @@ type ActionType = | {
     }
     | {
 
-        type: 'Custom',payload:number
+        type: 'Custom', payload: number
     }
 
 const contadorReducer = (state: typeof initialState, action: ActionType) => {
@@ -47,7 +47,7 @@ export const ContadorRed = () => {
             <button onClick={() => dispatch({ type: 'Descrementar' })} className="btn btn-outline-primary mt-2">
                 -1
             </button>
-            <button onClick={() => dispatch({ type: 'Custom',payload:100 })} className="btn btn-outline-danger mt-2">
+            <button onClick={() => dispatch({ type: 'Custom', payload: 100 })} className="btn btn-outline-danger mt-2">
                 100
             </button>
         </>
