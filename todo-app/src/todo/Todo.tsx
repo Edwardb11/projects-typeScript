@@ -1,3 +1,4 @@
+import { TodoList } from "./components/TodoList"
 import { TodoProvider } from "./context/TodoProvider"
 
 export const Todo = () => {
@@ -7,12 +8,7 @@ export const Todo = () => {
    <h1>
    Todo:
        </h1> 
-       <ul>
-         <li>TODO</li>
-         <li>TODO</li>
-         <li>TODO</li>
-         <li>TODO</li>
-       </ul>
+ <TodoList/>
     </TodoProvider>
   )
 }

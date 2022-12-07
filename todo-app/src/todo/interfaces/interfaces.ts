@@ -14,3 +14,7 @@ export interface TodoState {
 export interface props {
     children: JSX.Element | JSX.Element[];
 }
+
+export interface TodoItemsProps{
+   todo:Todo 
+}
