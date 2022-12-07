@@ -8,8 +8,13 @@ const INITIAL_STATE: TodoState = {
   todos: [
     {
       id: "1",
+      desc: "Recolectar las piedras del infinito",
       completed: false,
-      desc: "Piedra de alarma",
+    },
+    {
+      id: "2",
+      desc: "Piedra del alma",
+      completed: false,
     },
   ],
   completed: 0,
@@ -18,7 +23,18 @@ const INITIAL_STATE: TodoState = {
 
 export const TodoProvider = ({ children }: props) => {
   const [todoState, dispatch] = useReducer(todoReducer, INITIAL_STATE);
+
+  const toggleTodo = (id: string) => {
+    dispatch({ type: "toggleTodo", payload: { id } });
+  };
+
   return (
-    <TodoContext.Provider value={{ todoState }}>{children}</TodoContext.Provider>
+    <TodoContext.Provider
+      value={{
+        todoState,
+        toggleTodo,
+      }}>
+      {children}
+    </TodoContext.Provider>
   );
 };

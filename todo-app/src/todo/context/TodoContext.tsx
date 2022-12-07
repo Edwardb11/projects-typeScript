@@ -1,9 +1,11 @@
 import { createContext } from "react";
 import { TodoState } from "../interfaces/interfaces";
 
-export type TodoContextPros = {
+export type TodoContextProps = {
   todoState: TodoState;
+  toggleTodo: (id: string) => void;
 };
-export const TodoContext = createContext<TodoContextPros>(
-  {} as TodoContextPros
+
+export const TodoContext = createContext<TodoContextProps>(
+  {} as TodoContextProps
 );

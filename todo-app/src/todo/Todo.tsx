@@ -1,14 +1,12 @@
-import { TodoList } from "./components/TodoList"
-import { TodoProvider } from "./context/TodoProvider"
+import { TItle } from "./components/TItle";
+import { TodoList } from "./components/TodoList";
+import { TodoProvider } from "./context/TodoProvider";
 
 export const Todo = () => {
   return (
     <TodoProvider>
-    
-   <h1>
-   Todo:
-       </h1> 
- <TodoList/>
+      <TItle/>
+      <TodoList />
     </TodoProvider>
-  )
-}
+  );
+};
