@@ -1,5 +1,5 @@
 import { useState } from "react";
-import  { TabItem } from "./types/types";
+import { TabItem } from "./types/types";
 import styles from "./tabsView.module.css";
 import classnames from "classnames";
 
