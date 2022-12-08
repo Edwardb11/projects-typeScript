@@ -47,15 +47,18 @@ export default function TabsView({ items }: TabsViewProps) {
   );
 }
 interface TabViewProps {
-  index: number;
-  active: boolean;
-  item: TabItem;
-  onClick: (index: number) => void;
-}
-function TabView({ index, active, item, onClick }: TabViewProps) {
-  return active ? (
-    <div>{item.title} </div>
-  ) : (
-    <button onClick={() => onClick(index)}>{item.title}</button>
-  );
-}
+    index: number;
+    active: boolean;
+    item: TabItem;
+    onClick: (index: number) => void;
+  }
+  
+  function TabView({ index, active, item, onClick }: TabViewProps) {
+    return active ? (
+      <div>{item.title}</div>
+    ) : (
+      <button  onClick={() => onClick(index)}>
+        {item.title}
+      </button>
+    );
+  }
