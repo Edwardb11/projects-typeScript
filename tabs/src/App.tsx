@@ -1,9 +1,9 @@
-import { TabsView } from "./components/tabs/TabsView";
+import TabsView  from "./components/tabs/TabsView";
 
 function App() {
   return (
     <div>
-      <TabsView items={[]} onChange={()=>{}} />
+      <TabsView items={[]} onChange={()=>{}}  />
     </div>
   );
 }
