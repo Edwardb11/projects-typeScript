@@ -4,8 +4,8 @@ export type Visibility = "great" | "good" | "ok" | "poor";
 export interface DiaryEntry {
   id: number;
   date: string;
-  wather: Weather;
-  visibiliity: Visibility;
+  weather: Weather;
+  visibility: Visibility;
   comment: string;
 }
 
